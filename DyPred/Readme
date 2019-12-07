@@ -6,7 +6,7 @@
 % We extended the Gated Graph Neural Network (GGNN) [2] at https://github.com/microsoft/gated-graph-neural-network-samples
 
 The code is the implementation of a dynamic graph predictor, which includes an LSTM encode-decoder model and a gated graph neural network.
-We leverage theGGNNs potential for learning the topology of the graph. GGNNs are embedded in a recurrent encoder to preserve the topology of a dynamic graph at each time step.
+We leverage the GGNNs potential for learning the topology of the graph. GGNNs are embedded in a recurrent encoder to preserve the topology of a dynamic graph at each time step.
 We enforce the decoder to predict the future dynamic evolution of a graph whose recent past history was encoded by the encoder. We utilize an attention mechanism over the past history of the graph in order to detect the time steps that have a relatively greater impact on the prediction
 
 main.py is the main file that should be run. The input is a sequence of graph snapshots. Each graph file is represented by an adjacency list.
